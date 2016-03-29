@@ -1,0 +1,8 @@
+Table: surveys.csv 
+Task: Write a query that return the heaviest animal from a specific year and group the results by species_id and sex.
+
+Answer:
+SELECT species_id, sex, year, MAX(weight) 
+FROM surveys 
+GROUP BY year 
+ORDER BY species_id, sex
